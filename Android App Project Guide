@@ -1,0 +1,57 @@
+Simple Android app with click buttons which is integrated with Firebase
+
+Create a new Android Studio project and select "Empty Activity" as the project template.
+https://developer.android.com/codelabs/build-your-first-android-a
+
+
+Open the Firebase console and create a new project. Follow the instructions to add Firebase to your Android app by adding the Firebase configuration files to your project.
+
+Websites :
+* https://developer.android.com/studio/write/firebase
+* https://firebase.google.com/docs/android/setup
+
+
+3.In your app's build.gradle file, add the following dependencies:
+
+implementation 'com.google.firebase:firebase-database:19.7.0'
+implementation 'com.google.firebase:firebase-auth:19.7.0'
+
+
+4.Create a new layout file for your main activity and add a Button to it:
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Click me" />
+
+
+5.In your MainActivity class, add the following code to initialize the Firebase database:
+
+private FirebaseDatabase mDatabase;
+private DatabaseReference mRef;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    // Initialize Firebase database
+    mDatabase = FirebaseDatabase.getInstance();
+    mRef = mDatabase.getReference("value");
+}
+
+
+6.Add an OnClickListener to your Button to update the value in the Firebase database:
+
+Button button = findViewById(R.id.button);
+button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        mRef.setValue("new value");
+    }
+});
+
+
+7.Run your app on an emulator or device and click the button to update the value in the Firebase database.
+
