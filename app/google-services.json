@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "181230249914",
+    "firebase_url": "https://dofs-9bfa7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dofs-9bfa7",
+    "storage_bucket": "dofs-9bfa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181230249914:android:c7bdfde70792024ad7df83",
+        "android_client_info": {
+          "package_name": "com.example.motordofs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181230249914-r64dr46aj56neaeanj1kjpslp2pq2bvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXrGq9r8JQBLW8h-dDQg3NXcZmGZ8dVxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181230249914-r64dr46aj56neaeanj1kjpslp2pq2bvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
