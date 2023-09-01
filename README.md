@@ -6,4 +6,5 @@
   1.Project explanation (PDF file) : Explains completely about the project .<br />
   2.App Interface (JPG File) : Actual image of the running app.<br />
   3.Arduino code (INO File) : Code used on Arduino IDE.<br />
-  4.Complete Android studio project files.
+  4.Complete Android studio project files.<br />
+  5.Android App Guide file.
